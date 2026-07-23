@@ -2,10 +2,10 @@
 
 This project applies [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5) to football footage. The custom dataset contains two object classes—`player` and `ball`—and the repository includes the scripts required to train, validate, and run inference on images or videos.
 
-| Language | Guide |
-| --- | --- |
-| English | [Overview](#overview) · [Quick start](#quick-start) · [Training](#training) · [Inference](#inference) |
-| Tiếng Việt | [Hướng dẫn nhanh bằng tiếng Việt](#hướng-dẫn-nhanh-bằng-tiếng-việt) |
+| Language   | Guide                                                                                                 |
+| ---------- | ----------------------------------------------------------------------------------------------------- |
+| English    | [Overview](#overview) · [Quick start](#quick-start) · [Training](#training) · [Inference](#inference) |
+| Tiếng Việt | [Hướng dẫn nhanh bằng tiếng Việt](#hướng-dẫn-nhanh-bằng-tiếng-việt)                                   |
 
 ## Demo
 
@@ -152,15 +152,15 @@ The annotated files are saved under `runs/detect/<experiment-name>/`.
 
 ## Hướng dẫn nhanh bằng tiếng Việt
 
-| Nội dung | Hướng dẫn |
-| --- | --- |
-| Mục tiêu | Phát hiện `player` (cầu thủ) và `ball` (bóng) trong ảnh hoặc video bóng đá. |
-| Cài đặt | Tạo môi trường ảo, kích hoạt môi trường, sau đó chạy `pip install -r requirements.txt`. |
-| Dữ liệu | Sửa trường `path` trong `football.yaml` để trỏ đến bộ dữ liệu trên máy của bạn. |
-| Huấn luyện | Chạy `python train.py --img 640 --batch 16 --epochs 100 --data football.yaml --weights yolov5s.pt --name football-yolov5s`. |
-| Nhận diện video | Chạy `python detect.py --weights <duong-dan-best.pt> --source <duong-dan-video>`. |
-| Kết quả | Ảnh/video đã nhận diện được lưu trong `runs/detect/`. |
-| Video mẫu | [Xem hoặc tải video kết quả](runs/detect/exp3/Match_1953_2_0_subclip.mp4). |
+| Nội dung        | Hướng dẫn                                                                                                                   |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Mục tiêu        | Phát hiện `player` (cầu thủ) và `ball` (bóng) trong ảnh hoặc video bóng đá.                                                 |
+| Cài đặt         | Tạo môi trường ảo, kích hoạt môi trường, sau đó chạy `pip install -r requirements.txt`.                                     |
+| Dữ liệu         | Sửa trường `path` trong `football.yaml` để trỏ đến bộ dữ liệu trên máy của bạn.                                             |
+| Huấn luyện      | Chạy `python train.py --img 640 --batch 16 --epochs 100 --data football.yaml --weights yolov5s.pt --name football-yolov5s`. |
+| Nhận diện video | Chạy `python detect.py --weights <duong-dan-best.pt> --source <duong-dan-video>`.                                           |
+| Kết quả         | Ảnh/video đã nhận diện được lưu trong `runs/detect/`.                                                                       |
+| Video mẫu       | [Xem hoặc tải video kết quả](runs/detect/exp3/Match_1953_2_0_subclip.mp4).                                                  |
 
 Nếu không có GPU NVIDIA, bạn vẫn có thể chạy bằng CPU nhưng tốc độ huấn luyện và nhận diện video sẽ chậm hơn.
 
@@ -175,7 +175,7 @@ git check-ignore -v path/to/file
 
 Do not commit datasets, secrets, virtual environments, generated training runs, or model weights. The `.gitignore` file is configured to exclude these items while allowing the curated demo video used above.
 
-## Acknowledgements
+## Acknowledgments
 
 This repository is based on [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5). Refer to the upstream [documentation](https://docs.ultralytics.com/yolov5/) for additional training, export, and deployment options.
 
