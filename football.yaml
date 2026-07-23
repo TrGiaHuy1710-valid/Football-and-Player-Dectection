@@ -1,0 +1,7 @@
+path: /mnt/e/Python_Project/FootBall_Detection/football_dataset_yolo_dataset
+train: images/train
+val: images/val
+
+names:
+    0: player
+    1: ball
